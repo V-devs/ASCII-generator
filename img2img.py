@@ -25,8 +25,10 @@ def get_args():
 def main(opt):
     if opt.mode == "simple":
         CHAR_LIST = '@%#*+=-:. '
-    else:
+    elif opt.mode == "complex":
         CHAR_LIST = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
+    else:
+        print("Not a valid mode")
     if opt.background == "white":
         bg_code = 255
     else:
